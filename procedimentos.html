@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+        .prancheta{
+            width: 5rem;
+        }
+        .bloco--01{
+background-color:#5CE1E6;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td{
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #00bf6300;
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+.tr-bloco{
+    background-color: #5CE1E6;
+}
+main{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.topo{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9AD0D3;
+    height: 7rem;
+}
+.titulo-vacinacao{
+color: white;
+}
+.topo-img{
+    width: 7rem;
+    margin-top: 3rem;
+}
+.bloco-dados{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.dados-grupo{
+    display: flex;
+    flex-direction: column;
+    background-color: #CAD9EA;
+    width: 21rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    gap: 0.4rem;
+}
+.prancheta{
+width: 3rem;
+height: 3rem;
+}
+p{
+    font-size: 0.8rem;
+}
+
+.titulos-dados{
+    font-size: 1rem;
+}
+.img-paragrafo{
+    display: flex;
+    flex-direction: row;
+}
+.bloco-de-status{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+h2{
+    background-color: #B7F5EC;
+    width: 19rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+table{
+    width: 15rem;
+}
+button{
+  background-color: #00BF63;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.tabela-{
+    background-color: #5CE1E6;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="topo">
+            <h1 class="titulo-vacinacao">Procedimentos:</h1>
+            <img class="topo-img" src="/pngtree-hand-drawn-illustration-of-doctors-giving-patients-physical-examination-png-image_4267516-removebg-preview.png" alt="">
+        </div>
+        <div class="bloco-dados">
+            <div class="dados-grupo">
+                <h1 class="titulos-dados">Endoscopia </h1>
+                <div class="img-paragrafo">
+                    <img class="prancheta" src="/prancheta.png" alt="">
+                <p>
+                    Um exame que utiliza um tubo flexível com uma câmera na extremidade para visualizar o interior de órgãos ou cavidades do corpo, como o trato gastrointestinal.
+                </p>
+                </div>
+            </div>
+
+            <div class="dados-grupo">
+                <h1 class="titulos-dados">Cateterismo </h1>
+                <div class="img-paragrafo">
+                <img class="prancheta" src="/prancheta.png" alt="">
+                <p>
+                    Um procedimento onde um cateter (tubo fino) é inserido em um vaso sanguíneo para diagnósticos ou tratamentos, como angioplastia.
+                </p>
+                </div>
+            </div>
+
+            <div class="dados-grupo">
+                <h1 class="titulos-dados">Exame de imagem </h1>
+                <div class="img-paragrafo">
+                    <img class="prancheta" src="/prancheta.png" alt="">
+                    <p>
+                        são procedimentos utilizados para visualizar estruturas internas do corpo humano, ajudando no diagnóstico e monitoramento de doenças.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bloco-de-status">
+                <h2>
+                    Status de solicitação:
+                </h2>
+                <table>
+                    <tr class="tabela-">
+
+                    </tr>
+                    <tr class="tabela-">
+                      <td>Solicitados</td>
+                      <td>0</td>
+                    </tr>
+                    <tr class="tabela-">
+                      <td>Em andamento</td>
+                      <td>0</td>
+                    </tr>
+                    <tr class="tabela-">
+                      <td>Autorizados</td>
+                      <td>0</td>
+                    </tr>
+                    <tr style="background-color: red;color: white;">
+                        <td>Pendência</td>
+                        <td>0</td>
+                      </tr>
+                  </table>
+                  <button>Solicitar procedimento</button>
+                  <br>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

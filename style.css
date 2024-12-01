@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+background-color: white;
+background-image: url("./Untitledre.png"), url("./02.png");
+background-position: top right,bottom left;
+background-size: 80%,80%;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.form-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+width: 300px;
+}
+.bloco1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+img{
+    width: 110px;
+   
+}
+.titulo-um{
+
+width: 22rem;
+}
+.nome-app{
+font-size:3rem;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+color: #2CD6CE;
+}
+
+h1{
+    
+}
+
+.titulo2{
+   color: #ffb433ad; 
+}
+.formuario{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 17rem; 
+    height: 12rem; 
+}
+fieldset{
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    justify-content: center; /* Centralizar no eixo horizontal */
+    align-items: center; /* Alinhar no eixo vertical */
+    border: none; /* Remove a borda padrão do fieldset */
+}
+.icon {
+    color: white;
+    font-size: 1.5rem; /* Ajusta o tamanho do ícone */
+    margin-right: 0.3rem; /* Ajuste opcional para ícone */
+    margin-bottom: 0.8rem;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(44, 214, 206);
+    padding: 0.4rem;
+    border-radius: 1.2rem;
+   
+}
+input {
+    border: none; /* Estilo para input */
+    outline: none;
+}
+
+.form-container h2 {
+margin-bottom: 15px;
+text-align: center;
+}
+.form-container input {
+width: 12.6rem;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 20px;
+font-size: 14px;
+text-align: center;
+}
+.botao-entrar {
+width: 12rem;
+padding: 10px;
+background: rgb(44, 214, 206);
+color: black;
+border: none;
+border-radius: 19px;
+font-size: 16px;
+cursor: pointer;
+}
+.form-container button:hover {
+background: #0056b3;
+}
+.botao-cadastre-se{
+width: 12rem;
+padding: 10px;
+background:#ffb433ad;
+color: black;
+border: none;
+border-radius: 19px;
+font-size: 16px;
+cursor: pointer;
+}
+.esqueceu-senha{
+font-size: 0.8rem;
+padding: 0.5rem;
+}
+.nao-tem-conta{
+font-size: 0.8rem;
+}
+.bloco-3{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 14rem;
+}
+

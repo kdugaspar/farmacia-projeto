@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+        form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bloco-01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1EDF1;
+    height: 15rem;
+    width: 100%;
+}
+img{
+    width: 7rem;
+}
+h1{
+    font-size: 3rem;
+    color: #6A739C;
+}
+.div-sesoes{
+    width: 29rem;
+}
+.sesao--{
+    background-color:#D1EDF1;
+    
+}
+.s{
+    padding: 1rem;
+}
+section{
+    border-radius: 1rem;
+}
+h2{
+    font-size: 2rem;
+    background-color: #9AD0D3;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+.bloco-pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.f{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="bloco-01">
+            <img src="/Captura_de_tela_2024-12-01_155435-removebg-preview.png" alt="">
+            <h1>Custo - benefício</h1>
+        </div>
+        <div class="bloco-pesquisa">
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Pesquise agora..." name="search2" value="Ultrassonografia">
+                <button type="submit"><i class="fa fa-search"></i> </button>
+              </form>
+              <div>
+                <span>65608 - 420</span>
+                <span class="glyphicon">&#xe021;</span>
+              </div>
+        </div>
+        <div class="div-sesoes">
+            <section class="sesao--">
+                <h2>Clinisson Diagnóstico</h2>
+                <div class="s">
+                    <div>
+                        <i class="fa fa-map-marker" style="font-size:20px;color:#044447"></i>
+                        <span>R. Vinte e Quatro de Outubro/ Caxias-MA</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-credit-card-alt" style="font-size:20px;color:#044447"></i>
+                        <span>Ultrassonografia - R$ 200,00 </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone-square" style="font-size:20px;color:#044447"></i>
+                        <span>(99) 98123 - 4567</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sesao--">
+                <h2>Casa de Saúde </h2>
+                <div class="s">
+                    <div>
+                        <i class="fa fa-map-marker" style="font-size:20px;color:#044447"></i>
+                        <span>R. Quininha Pires, 345/ Caxias-MA</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-credit-card-alt" style="font-size:20px;color:#044447"></i>
+                        <span>Ultrassonografia - R$ 220,00 </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone-square" style="font-size:20px;color:#044447"></i>
+                        <span>(99) 93078 - 3100</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sesao--">
+                <h2>MedCenter Caxias</h2>
+                <div class="s">
+                    <div>
+                        <i class="fa fa-map-marker" style="font-size:20px;color:#044447"></i>
+                        <span>Tv. São Benedito, 665/ Caxias-MA</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-credit-card-alt" style="font-size:20px;color:#044447"></i>
+                        <span>Ultrassonografia - R$ 225,00</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone-square" style="font-size:20px;color:#044447"></i>
+                        <span>(99) 93078 - 1033</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="f">
+            <div>
+                <i class="fa fa-star" style="font-size:20px;color:rgb(255, 238, 0)"></i>
+                <i class="fa fa-star" style="font-size:20px;color:rgb(255, 238, 0)"></i>
+                <i class="fa fa-star" style="font-size:20px;color:rgb(255, 238, 0)"></i>
+                <i class="fa fa-star" style="font-size:20px;color:rgb(255, 238, 0)"></i>
+                <i class="fa fa-star" style="font-size:20px;color:rgb(255, 238, 0)"></i>
+            </div>
+            <span>Feedback</span>
+        </div>
+    </main>
+</body>
+</html>

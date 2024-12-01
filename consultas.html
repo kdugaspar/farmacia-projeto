@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calendario {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      width: 300px;
+      margin: 20px auto;
+    }
+    .dia {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .fim-de-semana {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    .evento {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .dias-da-semana{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.2rem;
+    }
+
+.bloco-infor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.bloco-informacoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #E4F4F7;
+  width: 18rem;
+  padding: 1rem;
+}
+.bloco-informacoes-div{
+  display: flex;
+  flex-direction: column;
+}
+.bloco-infor > h1{
+  background-color: #ABF0E8;
+  width: 20rem;
+  height: 2.8rem;
+}
+.bloco-01{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9AD0D3;
+  width: 100%;
+  height: 4rem;
+  color: white;
+}
+.bloco-02{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+}
+h2{
+  font-size: 1rem;
+  background-color: #E7F5F8;
+  padding: 0.4rem;
+  border-radius: 0rem 1rem 0rem 0rem;
+}
+.nome-mes{
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.sessao-botoes{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.botoes{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: #7aa3a8;
+}
+.botao-m{
+  background-color:#2CD6CE;
+  color: white;
+  padding: 0.3rem;
+  width: 6rem;
+  font-size: 16px;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icon{
+font-size: 1.3rem;
+}
+.exames{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  width: 20rem;
+}
+.exames-icon{
+  color: green;
+}
+.sesao-exames{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.nomes-exames{
+  border: 2px solid #7aa3a873;
+  padding: 0.3rem;
+  border-radius: 25px;
+}
+    </style>
+</head>
+<body>
+    <main>
+      <div class="bloco-01">
+        <h1>Consultas</h1>
+      </div>
+      <div class="bloco-02">
+        <h2>Agendamentos:</h2>
+      </div>
+      <div class="datepi7890cker">
+              
+        <div class="nome-mes">
+        <span class="month-name"></span>
+        <span class="ano"></span>
+        </div>
+
+<div class="dias-da-semana">
+    <span class="day">D</span>
+    <span class="day">S</span>
+    <span class="day">T</span>
+    <span class="day">Q</span>
+    <span class="day">Q</span>
+    <span class="day">S</span>
+    <span class="day">S</span>
+</div>
+    <div id="calendario" class="calendario"></div>
+</div>
+<div class="bloco-infor">
+<h1>Lembrete</h1>
+<section class="bloco-informacoes">
+  <div>
+    <span>Consulta Agendada:</span>
+  </div>
+  <div class="bloco-informacoes-div">
+    <span>Dr. João Silva</span>
+    <span>Cardiologista</span>
+  </div>
+  <div>
+    <span>06/12/2024</span>
+  </div>
+  <div>
+    <span>Às 14:30</span>
+  </div>
+  <div class="bloco-informacoes-div">
+    <span>Avenida:</span>
+    <span>Senador Alexandre Costa</span>
+  </div> 
+</section>
+<section class="sessao-botoes">
+  <div class="botoes">
+    <i class="fas fa-check-circle icon"></i>
+    <button class="botao-m">Confirmar</button>
+  </div>
+  <div class="botoes">
+    <i class="fas fa-calendar-alt icon"></i>
+    <button class="botao-m">Reagendar</button>
+  </div>
+  <div class="botoes">
+    <i class="fas fa-times-circle icon"></i>
+    <button class="botao-m">Cancelar</button>
+  </div>
+</section>
+<section class="sesao-exames">
+  <h3>Exames:</h3>
+  <div class="exames">
+    <section class="exames-sesao">
+      <i class="fa fa-check-square-o exames-icon" style="font-size:24px"></i>
+      <span class="nomes-exames">Hemograma Completo</span>
+    </section>
+    <section class="exames-sesao ">
+      <i class="fa fa-check-square-o exames-icon" style="font-size:24px"></i>
+      <span class="nomes-exames">Glicemia</span>
+    </section>
+    <section class="exames-sesao">
+      <i class="fa fa-check-square-o exames-icon" style="font-size:24px"></i>
+      <span class="nomes-exames">Perfil Lipídico</span>
+    </section>
+  </div>
+</section>
+</div>
+    </main>
+    <script>
+const data = new Date()
+
+    
+function criarCalendario(mes, ano) {
+  const diasNoMes = new Date(ano, mes + 1, 0).getDate(); // Total de dias no mês
+  const primeiroDiaSemana = new Date(ano, mes, 1).getDay(); // Dia da semana do primeiro dia do mês
+  const calendario = document.getElementById("calendario");
+
+  // Limpar calendário existente
+  calendario.innerHTML = "";
+
+  // Criar espaços vazios antes do primeiro dia
+  for (let i = 0; i < primeiroDiaSemana; i++) {
+    const espaco = document.createElement("div");
+    espaco.classList.add("dia");
+    calendario.appendChild(espaco);
+  }
+
+  // Preencher dias do mês
+  for (let dia = 1; dia <= diasNoMes; dia++) {
+    const diaElemento = document.createElement("div");
+    diaElemento.textContent = dia;
+    diaElemento.classList.add("dia");
+
+    // Marcar fins de semana (sábado e domingo)
+    const diaSemana = new Date(ano, mes, dia).getDay();
+    if (diaSemana === 0 || diaSemana === 6) {
+      diaElemento.classList.add("fim-de-semana");
+    }
+
+    // Marcar eventos (exemplo: dia 15 e dia 25)
+    if (dia === 6 || dia === 6) {
+      diaElemento.classList.add("evento");
+    }
+
+    calendario.appendChild(diaElemento);
+  }
+}
+
+// Exemplo: Criar calendário para Novembro de 2024
+const mes = data.getMonth(); // Novembro (base 0)
+const ano = data.getFullYear();
+criarCalendario(mes, ano);
+let nomeMesBloco = window.document.querySelector(".month-name")
+let nomeDoMes;
+switch (mes + 1) {
+        case 1:
+            nomeDoMes = "Janeiro";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 2:
+            nomeDoMes = "Fevereiro";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 3:
+            nomeDoMes = "Março";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 4:
+            nomeDoMes = "Abril";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 5:
+            nomeDoMes = "Maio";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 6:
+            nomeDoMes = "Junho";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 7:
+            nomeDoMes = "Julho";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 8:
+            nomeDoMes = "Agosto";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 9:
+            nomeDoMes = "Setembro";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 10:
+            nomeDoMes = "Outubro";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 11:
+            nomeDoMes = "Novembro";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        case 12:
+            nomeDoMes = "Dezembro";
+            nomeMesBloco.innerHTML = nomeDoMes
+            break;
+        default:
+            nomeDoMes = "Mês inválido!";
+    }
+    </script>
+</body>
+</html>
