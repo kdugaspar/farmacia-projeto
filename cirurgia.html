@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-menu.css">
     <title>Document</title>
     <style>
         *{
@@ -159,5 +160,71 @@
         </div>
        </section>
     </main>
+    <div class="menu--">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+            <div class="bloco-menu">
+                <div class="dropdown">
+                    <!-- <button class="dropbtn">Dados Pessoais</button> -->
+                    <a class="a-link-0" href="dados-pessoais.html">Dados Pessoais</a>
+                    <div class="dropdown-content">
+                    <a class="a-link-1" href="dados-pessoais.html">Observações</a>
+                    <a class="a-link-1" href="dados-pessoais.html">Observações privadas</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <!-- <button class="dropbtn">Medicamentos</button> -->
+                    <a class="a-link-0" href="medicamentos.html">Medicamentos</a>
+                    <div class="dropdown-content">
+                    <a class="a-link-1" href="medicamentos.html">Prescrições</a>
+                    <a class="a-link-1" href="medicamentos.html">Posologia</a>
+                    <a class="a-link-1"  href="medicamentos.html">Efeitos Colaterais</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <!-- <button class="dropbtn">Consultas</button> -->
+                    <a class="a-link-0" href="consultas.html">Consultas</a>
+                    <div class="dropdown-content">
+                    <a class="a-link-1" href="consultas.html">Agendamentos</a>
+                    <a class="a-link-1" href="consultas.html">Exames</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <!-- <button class="dropbtn">Cirurgias</button> -->
+                    <a class="a-link-0" href="cirurgia.html">Cirurgias</a>
+                    <div class="dropdown-content">
+                    <a class="a-link-1" href="procedimentos.html">Procedimentos</a>
+                    <a class="a-link-1" href="vacinação.html">Vacinações</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <!-- <button class="dropbtn">Lista de MPIa´s</button> -->
+                    <a class="a-link-0" href="lista-de-mips.html">Lista de MPIa´s</a>
+                  </div>
+                  <br>
+                  <div class="dropdown">
+                    <!-- <button class="dropbtn">Custos</button> -->
+                    <a class="a-link-0" href="custos.html">Custos</a>
+                  </div>
+            </div>
+              
+          </div>
+          
+          <!-- Use any element to open the sidenav -->
+          <span class="botao-menu" onclick="openNav()">Menu</span>
+    </div>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+      </script>
 </body>
 </html>
